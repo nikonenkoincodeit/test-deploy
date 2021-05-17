@@ -1,0 +1,6 @@
+$color-red: red;
+
+@mixin bordered($color) {
+  border-top: 1px solid $color;
+  border-bottom: 22px solid $color;
+}

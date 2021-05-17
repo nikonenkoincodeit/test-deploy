@@ -1,0 +1,27 @@
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: teal;
+}
+
+.box:hover {
+  background-color: orange;
+}
+
+.box-text {
+  width: 300px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+  border: 1px solid red;
+  padding: 0 15px;
+}
+
+span {
+  background-repeat: repeat-x;
+  color: red;
+  background-size: 8px 1px;
+  background-position: bottom;
+  background-image: repeating-linear-gradient(to left top, blue, red);
+}
+/*# sourceMappingURL=main.css.map */
