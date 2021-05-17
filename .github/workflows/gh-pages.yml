@@ -10,5 +10,5 @@ jobs:
         with:
           fetch-depth: 0
       - run: |
-          git remote add adobe git@github.com:nikonenkoincodeit/test-deploy.git
+          git remote add adobe https://github.com/nikonenkoincodeit/test-deploy.git
           git push --set-upstream adobe master
