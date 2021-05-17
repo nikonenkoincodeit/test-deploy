@@ -8,9 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-    - uses: actions/checkout@v2
     - name: Git-version
-      run: git version
+    - uses: actions/checkout@v2
     - name: Git-remote-add
       run: git remote add adobe https://github.com/nikonenkoincodeit/test-deploy.git
     - name: Git-fetch-all
