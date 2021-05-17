@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: git-bash
     steps:
       - name: Checkout 🛎️
         run: git checkout -b gh-pages
