@@ -9,7 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-
-      - name: Install and Build 🔧
-        run: |
-          git checkout -b gh-pages
+        run: git checkout -b gh-pages
