@@ -1,17 +1,13 @@
-name: Build and deploy to GitHub Pages
-
 on:
   push:
     branches: [main]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
+job:
+  asdf:
     steps:
-      - name: Checkout 🛎️
+      - uses: actions/checkout@v2
         with:
-          repository: nikonenkoincodeit/test-deploy
-
-      - name: DDDDD
-        run: git checkout -b new-branch
+          token: ${{ secrets.MY_TOKEN_WITH_PUSH_ACCESS_TO_THE_REMOTE }}
+          fetch-depth: 0
+      - run: |
+          git remote add adobe git@github.com:nikonenkoincodeit/test-deploy.git
+          git push --set-upstream adobe master
