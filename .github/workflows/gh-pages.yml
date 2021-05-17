@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        run: echo "# test-deploy" >> README11.md
+        run: git commit -m "build action" -a
