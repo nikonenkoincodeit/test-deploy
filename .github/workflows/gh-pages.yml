@@ -7,12 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Git-version
-    - uses: actions/checkout@v2
-    - name: Git-remote-add
-      run: git remote add adobe https://github.com/nikonenkoincodeit/test-deploy.git
-    - name: Git-fetch-all
-      run: git fetch --all
-    - name: Git-checkout-adobe
-      run: git checkout -b sync-demo-master adobe/master
+    steps:
+      - name: Git-version
+      - uses: actions/checkout@v2
+      - name: Git-remote-add
+        run: git remote add adobe https://github.com/nikonenkoincodeit/test-deploy.git
+      - name: Git-fetch-all
+        run: git fetch --all
+      - name: Git-checkout-adobe
+        run: git checkout -b sync-demo-master adobe/master
