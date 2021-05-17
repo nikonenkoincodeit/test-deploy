@@ -8,7 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.MY_TOKEN_WITH_PUSH_ACCESS_TO_THE_REMOTE }}
           fetch-depth: 0
       - run: |
           git remote add adobe git@github.com:nikonenkoincodeit/test-deploy.git
